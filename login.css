@@ -5,6 +5,11 @@ body {
   background-size: cover;
   background-position: center;
   font-family: sans-serif;
+  text-align: center
+}
+
+.main-content {
+  border: double 5px black;
 }
 
 .loginbox{
@@ -12,9 +17,9 @@ body {
   height: 420px;
   background: #000;
   color: #fff;
-  top: 50%;
-  left: 50%;
   position: absolute;
+  top: 350px;
+  left: 50%;
   transform: translate(-50%,-50%);
   box-sizing: border-box;
   padding: 70px 30px;

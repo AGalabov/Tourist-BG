@@ -1,0 +1,105 @@
+.background {
+    width: 99%;
+    border: double 3px black;
+    background: #FFF;
+    position: absolute;
+    left: 10%;
+    margin: auto;
+}
+
+.search-bar {
+    background-color: whitesmoke;
+    border: 3px double gray;
+    border-radius: 5px;
+    width: 40%;
+    height: 100px;
+    position: absolute;
+    top: 270px;
+    left: 30%;
+    margin: auto;
+}
+
+#search {
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 90%;
+    height: 30px;
+    position: absolute;
+    left: 5%;
+    top: 10px;
+}
+
+#submit {    
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    height:15px;
+    width: 15px;
+    background-color: lightblue;
+    position: absolute;
+    right: 5.5%;
+    top: 22px;
+    margin-bottom: 20px;
+}
+
+#area {
+    border: 3px solid lightblue;
+    border-radius: 5px;
+    width: 42.5%;
+    position: absolute;
+    left: 5%;
+    top: 60px;
+    margin-bottom: 20px;
+}
+
+#category {
+    border: 3px solid lightblue;
+    border-radius: 5px;
+    width: 42.5%;
+    position: absolute;
+    right: 5%;
+    top: 60px;
+    margin-bottom: 20px;
+}
+
+.image {
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+    height: 80px;
+    width: 140px;
+    display: inline-flexbox;
+}
+
+.desc {
+    padding-right: 2%;
+    display: inline-flexbox;
+}
+
+.rating {
+    float: right;
+    padding-right: 2%;
+    display: inline-flexbox;
+}
+
+.title {
+    float: right;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#entity {
+    display: inline-block;
+}
+
+#top10 {
+    position: absolute;
+    top: 400px;
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 15%;
+    font-family: Arial, Verdana;
+    border: 1px solid #000000;
+    background-color: #bbbbbb;
+    text-align: justify;
+}

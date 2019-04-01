@@ -1,0 +1,54 @@
+#legend {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #bbbbbb;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    height: 36px;
+}
+
+#regButton {
+    color: white;
+    background-color: #bbbbbb;
+    text-align: center;
+    font-size: inherit;
+    width: 90%;
+    margin-left: 5%;
+    height: 43px;
+    margin-bottom: 5%;
+}
+
+#formId {
+    background-color: #f7f7f3;
+    width: 100%;
+}
+
+.box {
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 15%;
+    font-family: Arial, Verdana;
+    border: 1px solid #000000;
+}
+
+.form-input {
+    width: 90%;
+    box-sizing: border-box;
+    display: block;
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+#desc {
+    height: 100px;
+}
+
+#typeId {
+    font-size: 20px;
+}
