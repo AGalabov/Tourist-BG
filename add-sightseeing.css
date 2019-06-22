@@ -1,0 +1,54 @@
+.main {
+    max-width: 80%;
+    margin: auto;
+    background: linear-gradient(to right bottom, #648880, #293f50);
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    max-width: 60%;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.tight {
+    max-width: 40%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.btn {
+    padding: 0.625rem 4.40rem;
+    font-size: 25px;
+}
+
+.btn btn-light {
+    position: absolute;
+    top: 50%;
+}
+
+.btn-light {
+    background-color: #DCDCDC;
+}
+
+.btn-light:hover {
+    background-color: #C8C8C8;
+}
+
+.avatar-pic {
+    width: 300px;
+}
