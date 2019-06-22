@@ -1,4 +1,5 @@
 .main {
+    padding-top: 57px;
     max-width: 80%;
     margin: auto;
     background: linear-gradient(to right bottom, #648880, #293f50);
@@ -52,3 +53,4 @@
 .avatar-pic {
     width: 300px;
 }
+

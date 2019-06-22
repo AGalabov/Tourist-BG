@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Add sightseeing</title>
 
+
     <!--bootstrap links-->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,8 +24,29 @@
     <link rel="stylesheet" type="text/css" href="add-sightseeing.css">
 
 </head>
+
 <body>
-<!--<div clsss="main">-->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">BulgariaGuide</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Начало</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Обекти</a>
+        </li>
+
+    </ul>
+
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+            <a class="nav-link">Иван Иванов</a>
+        </li>
+    </ul>
+</nav>
+
 <form class="main">
     <div class="content">
 
@@ -35,7 +57,7 @@
             </div>
             <div class="d-flex justify-content-center">
                 <div class="btn btn-mdb-color btn-rounded float-left">
-                    <input type="file">
+                    <input type="file" ngf-select ng-model="new_files" multiple>
                 </div>
             </div>
         </div>
@@ -86,8 +108,7 @@
         <button type="button" class="btn btn-light">Добави</button>
     </div>
 </form>
-<!--</div>-->
-</body>
 
+</body>
 
 </html>
