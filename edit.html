@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit form</title>
+    <link rel="stylesheet" type="text/css" href="edit.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse" style="margin-bottom:0">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">BulgariaGuide</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="#">Обекти</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Иван Иванов</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <img src="images/background.jpg" width="80%" alt="BG-nature">
+    <div class="loginbox">
+        <img src="images/man.jpg" class="avatar">
+        <h1>Редактирай информация за профил</h1>
+        <form>
+            <input type="text" name="" placeholder="Въведете ново потребителско име">
+			<input type="text" name="" placeholder="Обновете лична информация">
+            <input type="password" name="" placeholder="Въведете нова парола">
+			<input type="password" name="" placeholder="Повторете паролата">
+		    <p align="left">Изберeте нова снимка на профила</p><br>
+            <input type="file" id="file" aria-label="File browser example">
+            <span class="file-custom"></span>
+
+            <input type="submit" name="" value="Обнови">
+        </form>
+    </div>
+
+</body>
+</head>
+
+</html>
