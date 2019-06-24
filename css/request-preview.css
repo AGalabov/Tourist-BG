@@ -1,0 +1,15 @@
+.list-group {
+    width: 80%;
+    margin-left: 10%; 
+}
+
+.card-img-right {
+    height: 50px;
+    width: 50px;
+    float: right;
+    padding-right: 15px; 
+}
+
+.card-info {
+    margin-left: 5px;
+}

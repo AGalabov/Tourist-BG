@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add sightseeing</title>
+
+    <!--Bootstrap styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="../../css/add-sightseeing.css">
+    <link rel="stylesheet" href="../../css/nav-bar-user.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="../../index_admin.html">BulgariaGuide</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index_admin.html">Начало</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../results-all/results-all_admin.html">Обекти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="add-sightseeing_admin.html">Добавяне на обект</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="../userpage/userpage_admin.html"><img src="../../images/admin.png"
+                        class="nav-avatar">Администратор</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form class="main">
+        <div class="content">
+
+            <div class="file-field">
+                <div class="mb-4">
+                    <img src="../../images/upload.png" height="10%"
+                        class="rounded-circle z-depth-1-half avatar-pic center" alt="example placeholder avatar">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="btn btn-mdb-color btn-rounded float-left">
+                        <input type="file" ngf-select ng-model="new_files" multiple>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Име">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Адрес">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="workTime" placeholder="Работно време">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="description" placeholder="Описание">
+            </div>
+
+            <div class="tight">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="price" placeholder="Цена" min="0">
+                </div>
+
+
+                <div class="form-group ">
+                    <select id="inputRegion" class="form-control">
+                        <option disabled selected>Регион</option>
+                        <option>Всички райони</option>
+                        <option>Северозападен</option>
+                        <option>Северен централен</option>
+                        <option>Североизточен</option>
+                        <option>Югозападен</option>
+                        <option>Южен централен</option>
+                        <option>Югоизточен</option>
+                    </select>
+                </div>
+
+                <div class="form-group ">
+                    <select id="inputCategory" class="form-control">
+                        <option disabled selected>Категория</option>
+                        <option>Исторически</option>
+                        <option>Културни</option>
+                        <option>Отдих</option>
+                        <option>Развлекателни</option>
+                        <option>Спорни</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button type="button" class="btn btn-light">Добави</button>
+            </div>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourist-bg</title>
+    <!--Bootstrap styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Custom styles-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/search-box.css">
+    <link rel="stylesheet" href="../../css/nav-bar-user.css">
+
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="../../index.html">BulgariaGuide</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Начало</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="results-all.html">Обекти</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="../login/login.html">Вход</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../register/register.html">Регистрация</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!--Search bar-->
+        <section class="search-sec">
+            <div class="container">
+                <form style="border: 2px solid black; border-radius: 5px;" action="#" method="post" novalidate="novalidate">
+                    <div class="row no-gutters">
+                        <div class="col-sm-8 nopadding">
+                            <input type="text" class="form-control search-slt" placeholder="Въведете име на забележителност или ключови думи">
+                        </div>
+                        <div class="col-sm-4 nopadding">
+                            <button type="button" class="btn btn-danger wrn-btn">Търси</button>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-sm-4 nopadding">
+                            <select class="form-control search-slt" id="categorySelection">
+                                <option>Всички категории</option>
+                                <option>Исторически</option>
+                                <option>Културни</option>
+                                <option>Отдих</option>
+                                <option>Развлекателни</option>
+                                <option>Спорни</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 nopadding">
+                            <select class="form-control search-slt" id="regionSelection">
+                                <option>Всички райони</option>
+                                <option>Северозападен</option>
+                                <option>Северен централен</option>
+                                <option>Североизточен</option>
+                                <option>Югозападен</option>
+                                <option>Южен централен</option>
+                                <option>Югоизточен</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 nopadding">
+                            <select class="form-control search-slt" id="sortingSelection">
+                                <option>Сортирани по рейтинг</option>
+                                <option>Сортирани по азбучен ред</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--All sights list-->
+        <div class="list-group">
+            <a href="../../sights/shipka/shipka.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/shipka.jpg">
+                <h4 class="mb-1">Паметник на свободата <strong>(9.5/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> исторически</p>
+                <p class="mb-1"><strong>Адрес:</strong> вр. Шипка, Стара планина</p>
+                <p class="mb-1"><strong>Работно време:</strong> 9:00 ч. – 19:00ч </p>
+                <p class="mb-1"><strong>Цена:</strong> 3лв</p>
+            </a>
+            <a href="../../sights/rilski-manastir/rilski-manastir.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/rilski-manastir.jpg">
+                <h4 class="mb-1">Рилският манастир <strong>(9.3/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> исторически</p>
+                <p class="mb-1"><strong>Адрес:</strong> Рила</p>
+                <p class="mb-1"><strong>Работно време:</strong> 06:30 - 21:00ч </p>
+                <p class="mb-1"><strong>Цена:</strong> безплатно (за музея - 8лв)</p>
+            </a>
+            <a href="../../sights/carevec/carevec.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/carevec.jpg">
+                <h4 class="mb-1">Крепостта Царевец <strong>(8.9/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> исторически</p>
+                <p class="mb-1"><strong>Адрес:</strong> Велико Търново</p>
+                <p class="mb-1"><strong>Работно време:</strong> 8:00 - 19:00ч </p>
+                <p class="mb-1"><strong>Цена:</strong> 6лв</p>
+            </a>
+            <a href="../../sights/belogradchishki-skali/belogradchishki-skali.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/belogradchishki-skali.jpg">
+                <h4 class="mb-1">Белоградчишките скали <strong>(8.6/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> отдих</p>
+                <p class="mb-1"><strong>Адрес:</strong> близо до град Белоградчик</p>
+                <p class="mb-1"><strong>Работно време:</strong> няма </p>
+                <p class="mb-1"><strong>Цена:</strong> безплатно</p>
+            </a>
+            <a href="../../sights/kapana/kapana.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/kapana.jpg">
+                <h4 class="mb-1">Квартал Капана<strong>(8.6/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> развлекателни</p>
+                <p class="mb-1"><strong>Адрес:</strong> центърът на град Пловдив</p>
+                <p class="mb-1"><strong>Работно време:</strong> няма </p>
+                <p class="mb-1"><strong>Цена:</strong> безплатно </p>
+            </a>
+            <a href="../../sights/magurata/magurata.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/magurata.jpg">
+                <h4 class="mb-1">Пещера Магурата<strong>(8.6/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> отдих</p>
+                <p class="mb-1"><strong>Адрес:</strong> близо до село Рабиша</p>
+                <p class="mb-1"><strong>Работно време:</strong> 09:30 – 12:00ч; 12:30 – 18:00ч </p>
+                <p class="mb-1"><strong>Цена:</strong> 5лв</p>
+            </a>
+            <a href="../../sights/star-grad/star-grad.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/star-grad.jpg">
+                <h4 class="mb-1">Старият град Пловдив<strong>(8.5/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> културни</p>
+                <p class="mb-1"><strong>Адрес:</strong> Трихълмието, Пловдив</p>
+                <p class="mb-1"><strong>Работно време:</strong> няма </p>
+                <p class="mb-1"><strong>Цена:</strong> безплатно</p>
+            </a>
+            <a href="../../sights/antichen-teatur/antichen-teatur.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/antichen-teatur1.jpg">
+                <h4 class="mb-1">Античният театър град Пловдив<strong>(8.4/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> културни</p>
+                <p class="mb-1"><strong>Адрес:</strong> Старият град, Пловдив</p>
+                <p class="mb-1"><strong>Работно време:</strong> 9:00 - 18:00ч </p>
+                <p class="mb-1"><strong>Цена:</strong> 3 лв</p>
+            </a>
+            <a href="../../sights/chudnite-mostove/chudnite-mostove.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/chudnite-mostove.png">
+                <h4 class="mb-1">Чудните мостове<strong>(8.3/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> отдих</p>
+                <p class="mb-1"><strong>Адрес:</strong> Западни Родопи</p>
+                <p class="mb-1"><strong>Работно време:</strong> няма </p>
+                <p class="mb-1"><strong>Цена:</strong> безплатно </p>
+            </a>
+            <a href="../../sights/arena-varna/arena-varna.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <img class="card-img-left" src="../../images/Varna1.jpg">
+                <h4 class="mb-1">Дворец на културата и спорта<strong>(8.2/10)</strong></h4>
+                <p class="mb-1"><strong>Категория:</strong> спортни</p>
+                <p class="mb-1"><strong>Адрес:</strong> бул. „Княз Борис I-ви“ 115, 9002 Варна Център, Варна</p>
+                <p class="mb-1"><strong>Работно време:</strong> според събитието </p>
+                <p class="mb-1"><strong>Цена:</strong> според събитието </p>
+            </a>
+
+        </div>
+    </main>
+</body>
+
+</html>

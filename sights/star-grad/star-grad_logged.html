@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<head xmlns="http://www.w3.org/1999/html">
+    <meta charset="UTF-8">
+    <title>Tourist-bg</title>
+
+    <!--Bootstrap styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Custom styles-->
+    <link rel="stylesheet" href="../../css/overview.css">
+    <link rel="stylesheet" href="../../css/rating.css">
+    <link rel="stylesheet" href="../../css/nav-bar-user.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+
+</head>
+<html lang="en">
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="../../index_logged.html">BulgariaGuide</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index_logged.html">Начало</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../functionalities/results-all/results-all_logged.html">Обекти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../functionalities/add-sightseeing/add-sightseeing_logged.html">Добавяне на
+                    обект</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="../../functionalities/userpage/userpage_logged.html"><img src="../../images/man.jpg" class="nav-avatar">Иван Иванов</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--    <div class="main">-->
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="
+    max-width: 800px !important;  margin: auto;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 tales" src="../../images/plovdiv_old_town1.jpg" alt="First slide" style="
+    max-width: 800px !important;">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 tales" src="../../images/plovdiv_old_town2.jpg" alt="Second slide" style="
+    max-width: 800px !important;">
+                </div>
+                <div class="carousel-item">
+                    <img id="tale" class="d-block w-100 tales" src="../../images/plovdiv_old_town3.jpg" alt="Third slide" style="
+    max-width: 800px !important;">
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--    </div>-->
+
+        <div class="card mb-3" style="border: 0ch">
+            <div class="rating-info">
+
+                <div class="card-body">
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <h2 class="mb-1" style="text-align: center;margin-bottom:5%;margin-top:3%;">Старият град
+                            </h2>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="rating">
+                                        <input type="radio" id="star10" name="rating" value="10" /><label for="star10" title="Rocks!">5 stars</label>
+                                        <input type="radio" id="star9" name="rating" value="9" /><label for="star9" title="Rocks!">4 stars</label>
+                                        <input type="radio" id="star8" name="rating" value="8" /><label for="star8" title="Pretty good">3 stars</label>
+                                        <input type="radio" id="star7" name="rating" value="7" /><label for="star7" title="Pretty good">2 stars</label>
+                                        <input type="radio" id="star6" name="rating" value="6" /><label for="star6" title="Meh">1 star</label>
+                                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5 stars</label>
+                                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4 stars</label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3 stars</label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2 stars</label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="maps">
+                                <iframe frameborder="0" src="https://maps.google.com/maps?q=staria%20grad%2C%20plovdiv&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                                </iframe>
+                            </div>
+                            <p class="mb-1"><strong>Категория: </strong> културни</p>
+                            <p class="mb-1">
+                                <strong>Адрес:</strong> Трихълмието, Пловдив
+                            </p>
+                            <p class="mb-1"><strong> Цена:</strong> безплатно</p>
+                            <p class="mb-1"><strong>Работно време: </strong> няма</p>
+                            <p class="mb-1"><strong>Описание на обекта: </strong></p>
+                            <p class="mb-1">
+                                Архитектурно-исторически резерват „Старинен Пловдив“ (известен още като Стария град) е разположен върху три от хълмовете на Пловдив – Небет тепе, Джамбаз тепе и Таксим тепе, известни още като Трихълмието, и заема площ от 35 km. Той е формиран вследствие
+                                на непрекъснатия живот в града в продължение на векове (от праисторията до наши дни) и съчетава в себе си духа и архитектурата от Античността, Средновековието и българското възраждане. Старият град е една от най-популярните
+                                туристически дестинации в Пловдив.
+                            </p>
+                            <div class="edit">
+                                <button type="button" class="btn btn-dark"> Предложение за промяна
+                                </button>
+                            </div>
+
+
+                            <p class="card-text" style="text-align: center;">
+                                <small class="text-muted">Последно
+                                    редактиран преди
+                                    1 седмица
+                                </small>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="after-main">
+                <form class="comment">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Напиши коментар">
+                    <button type="button" class="btn btn-dark" style="background-color: #222; color: white;display:block;margin-left:auto;margin-right:auto;margin-top:2%;">
+                        Коментирай
+                    </button>
+                </form>
+
+
+                <ul class="list-unstyled">
+                    <li class="media" style="border-color: #222;border-style:solid;border-width:2px;border-radius:4%">
+                        <img class="mr-3" src="../../images/avatar.png" alt="Потребителска снимка" style="display: inline-block;height:10%;width:10%">
+                        <h5 class="mt-0 mb-1" style="display: inline;">Маринела Иванова
+                            <p class="comment-text">
+                                Изключителна архитектура, едно от най-забележителните места в България.
+                        </h5>
+                    </li>
+                    <li class="media" style="border-color: #222;border-style:solid;border-width:2px;border-radius:4%">
+                        <img class="mr-3" src="../../images/avatar.png" alt="Потребителска снимка" style="display: inline-block;height:10%;width:10%">
+                        <h5 class="mt-0 mb-1" style="display: inline;">Силвия Христова
+                            <p class="comment-text">Изключително приятно за нощни разходки, с приятна компания.
+                        </h5>
+                    </li>
+                    <li class="media" style="border-color: #222;border-style:solid;border-width:2px;border-radius:4%">
+                        <img class="mr-3" src="../../images/avatar.png" alt="Потребителска снимка" style="display: inline-block;height:10%;width:10%">
+                        <h5 class="mt-0 mb-1" style="display: inline;">Калоян Кайков
+                            <p class="comment-text">Толкова много история на едно място. Силно препоръчвам.
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer font-small unique-color-dark">
+
+        <div class="container text-center text-md-left mt-5 first-footer">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold headers">Информация</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text">Проектът е създаден за курса по ПЧМИ от Александър, Ангел, Ния и Тодор(линкове към фейсбук в изготвили). Проектът е прототипна версия на сайт, който да показва забележителностите в България с информация и снимков материал към тях.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold headers">Изготвили</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://www.facebook.com/alexandar.galabov?fref=hovercard&hc_location=chat">Александър
+                            Гълъбов</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/angel.aleksandrov.77">Ангел Александров</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/niq.raikova">Ния Райкова</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/todor.angelov.97?ref=bookmarks">Тодор Ангелов</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold headers">Факултетен номер</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text">
+                        62023
+                    </p>
+                    <p class="text">
+                        62046
+                    </p>
+                    <p class="text">
+                        62027
+                    </p>
+                    <p class="text">
+                        62047
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold headers">За връзка</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text">
+                        <i class="fas fa-home mr-3"></i> София, България</p>
+                    <p class="text">
+                        <i class="fas fa-envelope mr-3"></i> bulgariaguide@gmail.com</p>
+                    <p class="text">
+                        <i class="fas fa-phone mr-3"></i> + 359 884 398 775</p>
+                    <p class="text">
+                        <i class="fas fa-print mr-3"></i> + 359 883 398 775</p>
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                </div>
+                <!-- Grid column -->
+                <i class="fab fa-facebook"></i>
+            </div>
+            <!-- Grid row -->
+
+        </div>
+
+        <div class="footer-copyright text-center py-3 copyright"><span class="headers">© 2019 Copyright: </span>
+            <a href="../index.html"> BulgariaGuide.com</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

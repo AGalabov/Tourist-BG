@@ -1,0 +1,25 @@
+TODO:
+->nav
+----> might be fixed DONE 
+----> should add "Добавяне на обект" DONE
+----> admin view DONE
+
+->pages to add
+----> sights info DONE
+----> different category/region DONE // but no new views yet
+----> almost every page should hava normal/logged/admin views DONE
+
+->Refactor
+----> separate files into folders DONE
+----> separate .css files DONE
+
+->Final stuff
+----> some admin/registered buttons should be added/removed/renamed
+---->login and register buttons should lead to somewhere
+---->add edit of personal info (Niya)
+---->backgrounds
+---->coments with names
+
+->MAYBE
+---->add transport
+---->check sorting ways (in region X; rating above X)

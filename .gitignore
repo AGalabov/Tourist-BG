@@ -1,4 +1,7 @@
 my_local_setup.conf
+.DS_Store
+/images
+/hw5/images
 *.exe
 *.bin
 *.project

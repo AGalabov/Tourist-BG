@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tourist-bg</title>
+
+    <!--Bootstrap styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="../../css/userpage.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/nav-bar-user.css">
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="../../index_logged.html">BulgariaGuide</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index_logged.html">Начало</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../results-all/results-all_logged.html">Обекти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../add-sightseeing/add-sightseeing_logged.html">Добавяне на обект</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link" href="userpage_logged.html"><img src="../../images/man.jpg" class="nav-avatar">Иван Иванов</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="loginbox">
+            <img src="../../images/man.jpg" class="avatar">
+            <h1> Иван Иванов</h1>
+            <form>
+                <h4>За мен: </h4>
+                <p>Здравейте, аз съм Иван Иванов, на 28 години от град Сливен. Работя като мениджър продажби
+                    , а в свободното си време обичам да посещавам различни туристически обекти.</p>
+                <button type="button" class="button">Редактиране</button>
+            </form>
+        </div>
+
+        <!--Добавени-->
+        <h5 style="padding-top: 340px; text-align: left; font-size: 22px; "> <b>Добавени от мен обекти</b></h5>
+        <hr>
+
+        <div class="album py-5 bg-light" style="padding-bottom: 50px">
+            <div class="container" style="width: 100%">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="../../images/Varna1.jpg" width="348px" height="200px"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Дворец на културата и спорта</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../sights/arena-varna/arena-varna_logged.html"><button type="button" class="btn btn-sm btn-outline-secondary">Още
+                                        </button></a>
+                                    </div>
+                                    <small class="text-muted">Rating: 8.2/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="images/chudnite-mostove.png" width="348px" height="200px"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Чудните мостове</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../sights/chudnite-mostove/chudnite-mostove_logged.html"><button type="button" class="btn btn-sm btn-outline-secondary">Още
+                                        </button></a>
+                                    </div>
+                                    <small class="text-muted">Rating: 8.3/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Препоръчани-->
+        <br>
+        <h5 style="padding-top: 10px;  text-align: left; font-size: 22px;"> <b>Най-високо оценени</b></h5>
+        <hr>
+
+        <div class="album py-5 bg-light" style="padding-bottom: 50px">
+            <div class="container" style="width: 100%">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="../../images/shipka.jpg" width="348px" height="200px"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Паметник на свободата</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../sights/shipka/shipka_logged.html"><button type="button" class="btn btn-sm btn-outline-secondary">Още
+                                        </button></a>
+                                    </div>
+                                    <small class="text-muted">Rating: 9.5/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="../../images/rilski-manastir.jpg" width="348px" height="200px"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Рилския манастир</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../sights/rilski-manastir/rilski-manastir_logged.html"><button type="button" class="btn btn-sm btn-outline-secondary">Още
+                                        </button></a>
+                                    </div>
+                                    <small class="text-muted">Rating: 9.3/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="../../images/carevec.jpg" width="348px" height="200px"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Царевец</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../sights/carevec/carevec_logged.html"><button type="button" class="btn btn-sm btn-outline-secondary">Още
+                                        </button></a>
+                                    </div>
+                                    <small class="text-muted">Rating: 8.9/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="../../images/belogradchishki-skali.jpg" width="348px"
+                                 height="200px" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Белоградчишки скали</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../../sights/belogradchishki-skali/belogradchishki-skali_logged.html"><button type="button" class="btn btn-sm btn-outline-secondary">Още
+                                        </button></a>
+                                    </div>
+                                    <small class="text-muted">Rating: 8.6/10</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
